@@ -13,6 +13,7 @@ export const Form = () =>{
     const resolveProblem = new Calc()
 
     const result = resolveProblem.resolve(value)
+    console.log(result)
 
     setFinalResult( result )
    

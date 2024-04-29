@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-export const ResultContext = createContext(0)
+export const ResultContext = createContext()
 
 export const ResultProvider = ({ children }) => {
 
