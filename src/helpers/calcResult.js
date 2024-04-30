@@ -43,22 +43,19 @@ export class Calc {
   primo(value){
     //7Primo(n - 1)
 
+    if(value <=1 ) return 0
+
     let primosList = []
 
-    for(let a = 1; primosList.length <= value; a++){
+    for(let a = 1; primosList.length <= value -2; a++){
       if(this.esPrimo(a)) primosList.push(a)
-      console.log(primosList)
     }
 
     return primosList[value - 2] * 7
 
-    
-
-    console.log(primosList)
   }
 
   resolve(n){
-    console.log(n)
 
     let resultFibonacci = this.fibonacci(n)
     let resultTriangular = this.triangular(n)
