@@ -9,10 +9,11 @@ export const Form = () =>{
 
   const handlerForm = (e) =>{
     e.preventDefault()
+    console.log(value)
 
     const resolveProblem = new Calc()
 
-    const result = resolveProblem.resolve(value)
+    const result = resolveProblem.resolve(parseInt(value))
     console.log(result)
 
     setFinalResult( result )
