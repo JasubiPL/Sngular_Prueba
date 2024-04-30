@@ -50,7 +50,7 @@ export class Calc {
       console.log(primosList)
     }
 
-    return primosList[value - 2]
+    return primosList[value - 2] * 7
 
     
 
